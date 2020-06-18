@@ -1,0 +1,272 @@
+                                    /* ESTILOS GENERALES */
+                                    
+                                    * {
+                                        box-sizing: border-box;
+                                    }
+                                    
+                                    body {
+                                        font-family: "Inter", sans-serif;
+                                        margin: 0;
+                                    }
+                                    
+                                    a {
+                                        color: #525252;
+                                        text-decoration: none;
+                                    }
+                                    
+                                    section {
+                                        min-height: 100vh;
+                                    }
+                                    
+                                    .contenedor {
+                                        padding: 0 10em;
+                                    }
+                                    
+                                    p {
+                                        color: #525252;
+                                    }
+                                    
+                                    h2 {
+                                        letter-spacing: -0.06em;
+                                        font-size: 5em;
+                                    }
+                                    
+                                    h3.subrayado {
+                                        font-size: 2em;
+                                        position: relative;
+                                        line-height: 300%;
+                                        margin: 0;
+                                        &:after {
+                                            content: "";
+                                            position: absolute;
+                                            left: 0;
+                                            bottom: 0;
+                                            height: 4px;
+                                            background: black;
+                                            width: 2em;
+                                        }
+                                    }
+                                    
+                                    header {
+                                        position: fixed;
+                                        z-index: 999;
+                                        width: 100%;
+                                        background: white;
+                                        box-shadow: 2px 2px 12px 1px rgba(0, 0, 0, 0.2);
+                                        nav {
+                                            display: flex;
+                                            justify-content: space-between;
+                                            width: 100%;
+                                            padding: 1em 2em;
+                                            ul {
+                                                display: flex;
+                                                padding: 0;
+                                                margin: 0;
+                                                justify-content: flex-end;
+                                                align-items: center;
+                                                li {
+                                                    display: flex;
+                                                    list-style-type: none;
+                                                    margin: 0;
+                                                    padding: 0 0.5em;
+                                                    justify-content: flex-end;
+                                                    text-transform: lowercase;
+                                                    font-size: 1em;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    /* VARIABLES COLORES */
+                                    
+                                    $orange: #FF9D00;
+                                    $lightblack: #525252;
+                                    /* POTENCIATE */
+                                    
+                                    #potenciate {
+                                        background-image: url(../img/image-home.jpg);
+                                        background-position: center center;
+                                        background-size: cover;
+                                        background-repeat: no-repeat;
+                                        background-attachment: fixed;
+                                        position: relative;
+                                        h1 {
+                                            font-size: 9em;
+                                            line-height: 80%;
+                                            letter-spacing: -0.04em;
+                                            margin: 0;
+                                            span {
+                                                display: block;
+                                            }
+                                        }
+                                        >div {
+                                            width: 100%;
+                                            padding-top: 10em;
+                                            >p {
+                                                font-size: 1em;
+                                                padding: 3em 0;
+                                                width: 60%;
+                                                margin: 0em;
+                                            }
+                                            .btn {
+                                                color: white;
+                                                padding: 1em 4em;
+                                                background: $orange;
+                                                text-decoration: none;
+                                                border-radius: 50px;
+                                                font-size: 0.8em;
+                                                box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.2);
+                                                &:hover {
+                                                    background-color: darken($orange, 5%);
+                                                }
+                                            }
+                                        }
+                                    }
+                                    
+                                    .separador {
+                                        clip-path: polygon(0% 76%, 6% 69%, 11% 64%, 15% 62%, 18% 62%, 21% 62%, 24% 62%, 28% 62%, 31% 63%, 35% 66%, 38% 67%, 41% 69%, 43% 71%, 46% 72%, 48% 73%, 52% 72%, 54% 70%, 57% 67%, 59% 63%, 62% 60%, 65% 57%, 69% 54%, 73% 52%, 77% 51%, 82% 50%, 86% 49%, 90% 49%, 95% 50%, 99% 51%, 100% 51%, 100% 100%, 0% 100%);
+                                        position: absolute;
+                                        bottom: -80px;
+                                        width: 100%;
+                                        padding: 0;
+                                        height: 500px;
+                                        background: white;
+                                    }
+                                    /* CONOCENOS */
+                                    
+                                    #conocenos {
+                                        min-height: 60vh;
+                                        >div {
+                                            display: flex;
+                                            width: 50%;
+                                            padding-top: 5em;
+                                            p {
+                                                font-size: 1em;
+                                                padding: 2em 0;
+                                                width: 80%;
+                                                color: #525252;
+                                            }
+                                            h2 {
+                                                letter-spacing: -0.06em;
+                                                font-size: 5em;
+                                                width: 25%;
+                                                line-height: 0.8em;
+                                                margin: 0;
+                                            }
+                                            img {
+                                                width: 35%;
+                                                position: absolute;
+                                            }
+                                        }
+                                    }
+                                    /* SERVICIOS */
+                                    
+                                    #servicios {
+                                        background: #FF9D00;
+                                        padding-top: 6em;
+                                        >div {
+                                            margin-top: 8em;
+                                        }
+                                        h2 {
+                                            letter-spacing: -0.06em;
+                                            font-size: 5em;
+                                            width: 25%;
+                                            line-height: 0.8em;
+                                            margin: 0;
+                                        }
+                                        .serviciosContenedor {
+                                            display: flex;
+                                            justify-content: space-between;
+                                            .serviciosItem {
+                                                width: calc(95% / 3);
+                                                display: flex;
+                                                flex-direction: column;
+                                                align-items: center;
+                                                background: white;
+                                                border-radius: 25px;
+                                                position: relative;
+                                                padding: 4em 0 3em 0;
+                                                img {
+                                                    width: 50%;
+                                                    position: absolute;
+                                                    top: -23%;
+                                                }
+                                                div {
+                                                    width: 80%;
+                                                    p {
+                                                        font-size: 0.8em;
+                                                        padding-top: 1.5em;
+                                                    }
+                                                }
+                                            }
+                                            a {
+                                                width: 100%;
+                                                display: block;
+                                                text-align: center;
+                                                text-decoration: none;
+                                                color: black;
+                                                font-weight: 600;
+                                                padding-top: 2em;
+                                            }
+                                        }
+                                    }
+                                    /*PROYECTOS*/
+                                    
+                                    #proyectos {
+                                        position: relative;
+                                        .swiper-slide {
+                                            display: flex;
+                                            align-items: flex-start;
+                                            h3 {
+                                                line-height: 100%;
+                                                margin-bottom: 2em;
+                                                &:after {
+                                                    bottom: -0.7em;
+                                                }
+                                            }
+                                            img {
+                                                width: 50%;
+                                            }
+                                            div {
+                                                text-align: left;
+                                                padding-left: 2em;
+                                                p {
+                                                    font-size: 0.7em;
+                                                }
+                                                h4 {
+                                                    font-size: 1.5em;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    
+                                    .swiper-container {
+                                        width: 100%;
+                                        height: 100%;
+                                        .swiper-button-next {
+                                            left: inherit !important;
+                                        }
+                                    }
+                                    
+                                    .swiper-slide {
+                                        text-align: center;
+                                        font-size: 18px;
+                                        background: #fff;
+                                        /* Center slide text vertically */
+                                        display: -webkit-box;
+                                        display: -ms-flexbox;
+                                        display: -webkit-flex;
+                                        display: flex;
+                                        -webkit-box-pack: center;
+                                        -ms-flex-pack: center;
+                                        -webkit-justify-content: center;
+                                        justify-content: center;
+                                        -webkit-box-align: center;
+                                        -ms-flex-align: center;
+                                        -webkit-align-items: center;
+                                        align-items: center;
+                                    }
+                                    
+                                    .swiper-container-horizontal>.swiper-pagination-progressbar {
+                                        top: inherit !important;
+                                        bottom: 0;
+                                    }

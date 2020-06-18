@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calico Agencia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <script src="js/swiper.jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="/index.html">
+                <img src="img/logo_1.svg" alt="logo calico" width="100px">
+            </a>
+            <ul>
+                <li>
+                    <a href="#conocenos">Conocenos</a></li>
+                <li>
+                    <a href="#servicios">Servicios</a></li>
+                <li>
+                    <a href="#proyectos">Proyectos</a></li>
+                <li>
+                    <a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="potenciate">
+            <div class="contenedor animate__animated animate__fadeInLeft">
+                <h1>Potenciá <span>tu negocio</span></h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis dolor quam ab. Cumque non ea reprehenderit consectetur voluptates recusandae doloremque, sunt consequuntur necessitatibus. Ullam totam repellendus rem maiores mollitia deleniti!</p>
+                <a href="servicios.html" class="btn">ver servicios</a>
+            </div>
+            <div class="separador"> </div>
+
+        </section>
+
+        <section id="conocenos" class="contenedor animate__animated animate__fadeInUp">
+            <div>
+                <div>
+                    <h2>Nos motivamos</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis dolor quam ab. Cumque non ea reprehenderit consectetur voluptates recusandae doloremque, sunt consequuntur necessitatibus. Ullam totam repellendus rem maiores mollitia
+                        deleniti!
+                    </p>
+                </div>
+                <div>
+                    <img src="img/img-concenos.svg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section id="servicios" class="contenedor">
+            <h2>Servicios</h2>
+            <div>
+                <div class="serviciosContenedor animate__animated animate__fadeInUp">
+                    <div class="serviciosItem">
+                        <img src="img/img-diseño.svg" alt="">
+                        <div>
+                            <h3 class="subrayado">Diseño</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda praesentium soluta alias odit nostrum accusamus tenetur eligendi sit, consequuntur placeat unde labore eum dolorem ipsa provident cum, velit, porro officia.</p>
+                            <a href="">ver más</a>
+                        </div>
+                    </div>
+                    <div class="serviciosItem">
+                        <img src="img/img-programacion.svg" alt="">
+                        <div>
+                            <h3 class="subrayado">Programación</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda praesentium soluta alias odit nostrum accusamus tenetur eligendi sit, consequuntur placeat unde labore eum dolorem ipsa provident cum, velit, porro officia.</p>
+                            <a href="">ver más</a>
+                        </div>
+                    </div>
+                    <div class="serviciosItem">
+                        <img src="img/img-mktdigital.svg" alt="">
+                        <div>
+                            <h3 class="subrayado">Mkt Digital</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda praesentium soluta alias odit nostrum accusamus tenetur eligendi sit, consequuntur placeat unde labore eum dolorem ipsa provident cum, velit, porro officia.</p>
+                            <a href="">ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos" class="contenedor">
+            <h2>Proyectos</h2>
+            <!-- Swiper -->
+            <div>
+                <div class="swiper-container swiperProyectos">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/image-home.jpg" alt="">
+                            <div>
+                                <h3 class="subrayado">Diseño</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda praesentium soluta alias odit nostrum accusamus tenetur eligendi sit, consequuntur placeat unde labore eum dolorem ipsa provident cum, velit, porro officia.</p>
+                                <h4>
+                                    Frase motivación Nal que nos inspiro Algún desafio Durante la creación Del proyecto.
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/image-home.jpg" alt="">
+                            <div>
+                                <h3 class="subrayado">Diseño</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda praesentium soluta alias odit nostrum accusamus tenetur eligendi sit, consequuntur placeat unde labore eum dolorem ipsa provident cum, velit, porro officia.</p>
+                                <h4>
+                                    Frase motivación Nal que nos inspiro Algún desafio Durante la creación Del proyecto.
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+        <section>
+            <h3>¡Mandanos un mensaje!</h3>
+        </section>
+
+
+
+        <footer>footer</footer>
+    </main>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'progressbar',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+
+</body>
+
+</html>
